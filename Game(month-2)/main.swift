@@ -1,11 +1,19 @@
-//
-//  main.swift
-//  Game(month-2)
-//
-//  Created by Nurjamal Mirbaizaeva on 7/2/23.
-//
-
 import Foundation
-
-print("Hello, World!")
-
+//Составить игру крестики и нолики используя инструменты ООП. 
+protocol Menu{
+    func startGame()
+    func endGame()
+}
+class Game: Menu{
+    func startGame() {
+    }
+    func endGame() {
+    }
+}
+var game = gameAgainstPerson()
+print("Игра крестики и нолики \nВыберите ячейку от 0 до 8")
+game.startGame()
+game.endGame()
+var gameBot = gameAgainstBot()
+print("Игра крестики и нолики \nВыберите ячейку от 0 до 8")
+gameBot.startGame()
